@@ -22,7 +22,7 @@ while current_read < total_size :
     out.write(aux)
     out.flush()
 
-
-print 'Finished'
 f.close()
 out.close()
+
+print 'Finished (%s)' % out.name
