@@ -4,6 +4,18 @@
 
 import struct
 
-f=open('/dev/urandom')
-a= f.read(4)
+chunk_size = 100
+current_read = 0;
+total_size = 1024 
+output_folder = '/media/pi/Seagate Expansion Drive/'
 
+print 'Starting...'
+f=open('/dev/urandom')
+
+while current_read < total_size :
+    current_read = current_read + chunk_size
+    print 'Reading %d/%d (%f%%) bytes' % ( current_read, total_size , float(current_read)*100/float(total_size) )
+    aux = f.read(chunk_size)
+
+print 'Finished'
+f.close()
