@@ -1,0 +1,4 @@
+Openssl libs for linux :
+'''bash
+   sudo apt-get install libssl-dev
+'''
