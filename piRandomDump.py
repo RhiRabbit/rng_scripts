@@ -5,7 +5,7 @@
 import random 
 
 chunk_size = 12
-total_size = 1024   
+total_size = 1024*1024*1024   
 output_folder = '/media/pi/Seagate Expansion Drive/'
 source_file = 'random'
 current_read = 0;

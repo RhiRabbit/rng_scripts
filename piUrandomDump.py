@@ -6,7 +6,7 @@ import random
 
 chunk_size = 100
 current_read = 0;
-total_size = 1024 * 1024  
+total_size = 1024 * 1024 * 100; 
 output_folder = '/media/pi/Seagate Expansion Drive/'
 source_file = 'urandom'
 
