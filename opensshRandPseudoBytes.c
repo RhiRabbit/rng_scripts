@@ -9,8 +9,8 @@ int main(int argc, char *argv[]) {
  unsigned char buffer[buffSize];
  do{
 
-   if( !(RAND_bytes((unsigned char *)buffer, sizeof(buffer)))) {
-     printf("ERROR: call to RAND_bytes() failed\n");
+   if( !(RAND_pseudo_bytes((unsigned char *)buffer, sizeof(buffer)))) {
+     printf("ERROR: call to RAND_pseudo_bytes() failed\n");
      exit(1);
    }
 
